@@ -10,9 +10,10 @@ p {
 }
 
 header {
-    background: #27c4ec;
+    background: #0625af;
     padding: 1rem;
     text-align: center;
+    color: azure;
 
 }
 
@@ -24,7 +25,6 @@ nav {
 
 .container {
     text-align: center;
-    /* Centraliza horizontalmente */
 }
 
 ul.nav {
@@ -36,7 +36,8 @@ ul.nav {
 }
 
 .nav-item {
-    margin: 10px 0;
+    margin: 20px 0;
+    font-size: x-large;
 }
 
 
@@ -53,6 +54,10 @@ ul.nav {
     border-radius: 5px;
 }
 
+#information {
+    text-align: center;
+}
+
 main {
     max-width: 800px;
     margin: 0 auto;
@@ -63,9 +68,8 @@ main {
 
 }
 
-
 footer {
-    background: rgb(6, 37, 175);
+    background: #0625af;
     padding: 2rem;
     text-align: center;
     grid-column: 1 / 3;
