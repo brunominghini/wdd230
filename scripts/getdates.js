@@ -39,6 +39,6 @@ window.onload = function () {
 };
 */
 
-document.getElementById("currentyear").innerText = new Date().getFullYear;
+document.getElementById("currentYear").innerText = new Date().getFullYear;
 
 doucmento.getElementById9("lastModified").innerText = `Last Modified: ${document.lastModified}`
