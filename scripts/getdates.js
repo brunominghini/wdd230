@@ -1,5 +1,5 @@
 
-
+/*
 // Function to get the current year
 function getCurrentYear() {
     const currentYear = new Date().getFullYear();
@@ -37,3 +37,7 @@ window.onload = function () {
     updateCopyrightYear();
     updateLastModifiedDate();
 };
+*/
+
+document.getElementById("currentYear").innerText = new Date().getFullYear;
+doucmento.getElementById9("lastModified").innerText = `Last Modified: ${document.lastModified}`
