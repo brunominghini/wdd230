@@ -1,4 +1,6 @@
+document.getElementById("currentYear").innerText = new Date().getFullYear;
 
+doucmento.getElementById9("lastModified").innerText = `Last Modified: ${document.lastModified}`
 /*
 // Function to get the current year
 function getCurrentYear() {
@@ -39,6 +41,3 @@ window.onload = function () {
 };
 */
 
-document.getElementById("currentYear").innerText = new Date().getFullYear;
-
-doucmento.getElementById9("lastModified").innerText = `Last Modified: ${document.lastModified}`
