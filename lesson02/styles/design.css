@@ -25,6 +25,7 @@ main {
 h2 {
     color: navy;
     text-align: left;
+    grid-column: 1/3;
 }
 
 article p {
