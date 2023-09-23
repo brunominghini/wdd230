@@ -39,7 +39,7 @@ article p {
 
 footer {
     margin-top: 1rem;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #0000001a;
     font-size: smaller;
-    text-align: right;
+    padding: .5rem 0;
 }
