@@ -12,14 +12,10 @@ footer {
     background-color: #e6f2ff
 }
 
-header {
-    background-color: #000000;
-    color: #fff;
-}
 
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 1rem;
 }
 
