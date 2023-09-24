@@ -43,3 +43,7 @@ footer {
     font-size: smaller;
     padding: .5rem 0;
 }
+
+.content {
+    padding: 10px;
+}
