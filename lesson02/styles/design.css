@@ -36,12 +36,11 @@ h1 {
 
 @media screen and (max-width: 768px) {
     .columns-main {
-
         grid-template-columns: 1fr 1fr;
-        gap: 1rem;
+        /*gap: 1rem;
         padding: 2rem;
         height: 60px;
-        width: 30%;
+        width: 30%;*/
     }
 }
 
@@ -49,10 +48,10 @@ h1 {
 @media screen and (max-width: 480px) {
     .columns-main {
         grid-template-columns: 1fr;
-        gap: 1rem;
+        /*gap: 1rem;
         padding: 2rem;
         height: 60px;
-        width: 30%;
+        width: 30%;*/
     }
 }
 
