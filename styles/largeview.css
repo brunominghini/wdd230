@@ -1,0 +1,15 @@
+/******** Larger Views ************/
+@media (min-width: 700px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    .main-column {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
