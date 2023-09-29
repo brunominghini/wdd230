@@ -94,8 +94,8 @@ footer {
     list-style: circle;
 }
 
-/* Larger Views ******************************/
-@media (min-width: 800px) {
+/******** Larger Views ************/
+@media (min-width: 700px) {
     nav ul {
         display: flex;
         justify-content: center;
