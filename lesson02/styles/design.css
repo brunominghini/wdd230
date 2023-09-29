@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
 body {
-    font-family: Roboto, helvetica, sans-serif;
+    font-family: Mooli, helvetica, sans-serif;
 }
 
 header,
@@ -7,6 +9,7 @@ main,
 footer {
     max-width: 760px;
     margin: 0 auto;
+
 }
 
 marquee {
