@@ -20,16 +20,12 @@ header {
 
 nav {
     background-color: #27c4ec;
-
     padding: 1rem;
     align-items: center;
     border: blue;
     border-style: groove;
 }
 
-.container {
-    text-align: center;
-}
 
 #course {
     text-align: center;
@@ -49,7 +45,6 @@ nav ul {
     font-size: x-large;
 }
 
-
 .main-column {
     display: grid;
     grid-template-columns: 1fr;
@@ -64,7 +59,7 @@ nav ul {
 }
 
 #information {
-    text-align: center;
+    align-items: center;
 }
 
 main {
@@ -92,4 +87,67 @@ footer {
 
 #nonenumber {
     list-style: circle;
+}
+
+
+#menu {
+    font-size: 1rem;
+    border: 1px solid rgba(0, 0, 0, .3);
+    padding: 3px 7px 6px;
+    background-color: #597ee6;
+    color: #000000;
+    position: fixed;
+    top: 25rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "💠";
+}
+
+/*.nav flex_column {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: #333333;
+    color: #fff;
+}
+
+
+.nav.flex_column li a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav.flex_column li a:hover {
+    background-color: #bbbbbb;
+    color: #333;
+    font-weight: 200;
+}*/
+
+.hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+
+    /* Show the hamburger button for mobile screens */
+    .hamburger {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav.show {
+        display: block;
+    }
 }
