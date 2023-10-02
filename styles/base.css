@@ -18,17 +18,22 @@ header {
 
 }
 
+.main-column {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+#course {
+    text-align: center;
+}
+
 nav {
     background-color: #27c4ec;
     padding: 1rem;
     align-items: center;
     border: blue;
     border-style: groove;
-}
-
-
-#course {
-    text-align: center;
 }
 
 nav ul {
@@ -43,12 +48,6 @@ nav ul {
 .nav-item {
     margin: 20px 0;
     font-size: x-large;
-}
-
-.main-column {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
 }
 
 .card {
@@ -89,7 +88,6 @@ footer {
     list-style: circle;
 }
 
-
 #menu {
     font-size: 1rem;
     border: 1px solid rgba(0, 0, 0, .3);
@@ -97,7 +95,7 @@ footer {
     background-color: #597ee6;
     color: #000000;
     position: fixed;
-    top: 25rem;
+    top: 20rem;
     right: 1rem;
 }
 
@@ -106,37 +104,14 @@ footer {
 }
 
 #menu.open::before {
-    content: "💠";
+    content: "❌";
 }
-
-/*.nav flex_column {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    background-color: #333333;
-    color: #fff;
-}
-
-
-.nav.flex_column li a {
-    display: block;
-    padding: 1rem;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-}
-
-.nav.flex_column li a:hover {
-    background-color: #bbbbbb;
-    color: #333;
-    font-weight: 200;
-}*/
 
 .hamburger {
     display: none;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
 
     /* Show the hamburger button for mobile screens */
     .hamburger {
@@ -147,7 +122,4 @@ footer {
         display: none;
     }
 
-    .nav.show {
-        display: block;
-    }
 }
