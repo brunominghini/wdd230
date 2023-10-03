@@ -95,7 +95,7 @@ footer {
     background-color: #597ee6;
     color: #000000;
     position: fixed;
-    top: 20rem;
+    top: 10rem;
     right: 1rem;
 }
 
@@ -105,27 +105,4 @@ footer {
 
 #menu.open::before {
     content: "❌";
-}
-
-.hamburger {
-    display: none;
-}
-
-@media screen and (max-width: 600px) {
-
-    /* Show the hamburger button for mobile screens */
-    .hamburger {
-        display: block;
-    }
-
-    .nav {
-        display: none;
-    }
-
-    iframe {
-        width: 100%;
-        height: fit-content;
-
-    }
-
 }

@@ -14,3 +14,26 @@
     }
 
 }
+
+.hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 650px) {
+
+    /* Show the hamburger button for mobile screens */
+    .hamburger {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    iframe {
+        width: 100%;
+        height: fit-content;
+
+    }
+
+}
