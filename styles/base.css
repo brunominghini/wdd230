@@ -122,4 +122,10 @@ footer {
         display: none;
     }
 
+    iframe {
+        width: 100%;
+        height: fit-content;
+
+    }
+
 }
