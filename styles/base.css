@@ -103,6 +103,14 @@ footer {
     content: "☰";
 }
 
-#menu.open::before {
+#menu.show::before {
     content: "❌";
+}
+
+.show li {
+    text-align: center;
+}
+
+.show li a {
+    text-align: center;
 }
