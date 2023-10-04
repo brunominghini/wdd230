@@ -7,8 +7,9 @@ iframe {
     display: flex;
     flex-direction: column;
     list-style: none;
-    background-color: #333;
+    background-color: #000cb9;
     color: #fff;
+
 }
 
 .navigation li {
@@ -42,7 +43,7 @@ navigation li a:hover {
     content: "☰";
 }
 
-#menu.show::before {
+#menu.open::before {
     content: "❌";
 }
 
