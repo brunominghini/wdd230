@@ -36,19 +36,6 @@ nav {
     border-style: groove;
 }
 
-nav ul {
-    display: block;
-    list-style: none;
-    text-align: center;
-    border: rgb(2, 2, 58);
-    border-style: outset;
-    border-radius: 40%;
-}
-
-.nav-item {
-    margin: 20px 0;
-    font-size: x-large;
-}
 
 .card {
     background-color: #70fce5;
@@ -89,28 +76,15 @@ footer {
 }
 
 #menu {
-    font-size: 1rem;
-    border: 1px solid rgba(0, 0, 0, .3);
-    padding: 3px 7px 6px;
-    background-color: #597ee6;
-    color: #000000;
-    position: fixed;
-    top: 10rem;
-    right: 1rem;
+    display: none;
 }
 
-#menu::before {
-    content: "☰";
+
+.open li {
+    display: block;
+    width: 100%;
 }
 
-#menu.show::before {
-    content: "❌";
-}
-
-.show li {
-    text-align: center;
-}
-
-.show li a {
-    text-align: center;
+.open li a {
+    display: block;
 }
