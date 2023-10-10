@@ -36,4 +36,35 @@ p {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
+    text-align: center;
+
+}
+
+img {
+    text-align: center;
+}
+
+.colorgreen {
+    color: green;
+}
+
+.colorblue {
+    color: #0981b0
+}
+
+.colorchampagne {
+    color: #bbb01ebe;
+
+}
+
+.colorbrown {
+    color: #473c3c;
+}
+
+.colorlilac {
+    color: #662d66;
+}
+
+.backgroundchampagne {
+    background-color: #bbb01ebe;
 }
