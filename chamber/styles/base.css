@@ -1,0 +1,39 @@
+h1,
+h2,
+h3,
+h4,
+p {
+    font-family: 'Mooli', sans-serif;
+}
+
+.title {
+    text-align: center;
+}
+
+.aligncenter {
+    text-align: center;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    background-color: #0981b0;
+    color: #fff;
+}
+
+.navigation li {
+    display: flex;
+    flex: 1 1 100%;
+}
+
+#seacrh {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-column {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}

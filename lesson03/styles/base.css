@@ -32,8 +32,6 @@ section {
 
 .fontfamily1 {
     font-family: 'Mooli', sans-serif;
-
-
 }
 
 .fontfamily2 {
@@ -69,4 +67,13 @@ section {
     color: #f1f1f1;
     width: 95%;
     padding: 20px;
+}
+
+.title {
+    text-align: center;
+}
+
+example {
+    display: flex;
+    align-items: center;
 }

@@ -18,13 +18,14 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/normalization.css">
     <link rel="icon" href="images/chamberfavicon.ico">
 
 </head>
 
 <body>
     <header>
-        <h1 class=Title>Morato City Chamber of Commerce</h1>
+        <h1 class="title">Morato City Chamber of Commerce</h1>
     </header>
     <nav>
         <button id="menu"></button>
@@ -32,10 +33,32 @@
             <li><a href="#">Home</a></li>
             <li><a href="">Community</a></li>
             <li><a href="" target="_blank">Opportunities</a></li>
-            <li><a href="">Scripture</a>
+            <li><a href="">Scripture</a></li>
+            <li>
+                <form id="search" action="/action_page.php">
+                    <label for="gsearch">Search Google:</label>
+                    <input type="search" id="gsearch" name="gsearch">
+                    <input type="submit">
+                </form>
             </li>
         </ul>
+
     </nav>
+    <main>
+        <div><img class="aligncenter" src="images/banner.PNG" alt="heroimage" width="70%" height="50%"></div>
+        <div class="main-column">
+            <section>
+                <p>card left</p>
+            </section>
+            <section>
+                <p>card center</p>
+            </section>
+            <section>
+                <p>card right</p>
+            </section>
+        </div>
+
+    </main>
     <footer>
 
     </footer>
