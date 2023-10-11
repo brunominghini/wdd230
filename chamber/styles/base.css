@@ -20,6 +20,7 @@ p {
     list-style: none;
     background-color: #0981b0;
     color: #fff;
+    align-items: center;
 }
 
 .navigation li {
