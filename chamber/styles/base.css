@@ -69,3 +69,47 @@ img {
 .backgroundchampagne {
     background-color: #bbb01ebe;
 }
+
+#maps {
+    text-align: center;
+    position: static;
+    align-content: center;
+}
+
+footer {
+    border-style: ridge;
+    background-color: #bbb01ebe;
+}
+
+section h3 {
+    border-style: ridge;
+    border-bottom: #0981b0;
+}
+
+.container {
+    position: relative;
+}
+
+.joinbutton {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    background-color: #008000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: wavy;
+    display: flex;
+    font-size: 25px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px 0 #473c3c, 0 6px 20px 0 #473c3c;
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+}
