@@ -41,6 +41,10 @@ p {
 
 }
 
+.main-information {
+    display: grid;
+}
+
 img {
     text-align: center;
 }
