@@ -14,19 +14,6 @@ p {
     text-align: center;
 }
 
-.navigation {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    background-color: #0981b0;
-    color: #fff;
-    align-items: center;
-}
-
-.navigation li {
-    display: flex;
-    flex: 1 1 100%;
-}
 
 #seacrh {
     display: flex;
@@ -96,18 +83,18 @@ section h3 {
 
 .joinbutton {
     position: absolute;
-    top: 10%;
-    left: 10%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     background-color: #008000;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 30px;
     text-align: center;
     text-decoration: wavy;
     display: flex;
-    font-size: 25px;
-    border-radius: 8px;
+    font-size: 8px;
+    border-radius: 4px;
     box-shadow: 0 8px 16px 0 #473c3c, 0 6px 20px 0 #473c3c;
 
 }
@@ -124,4 +111,48 @@ section h3 {
     right: 1rem;
     font-size: 3rem;
     cursor: pointer;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: #0981b0;
+    color: #fff;
+
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation li a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+navigation li a:hover {
+    background-color: #bbb;
+    color: #0981b0;
+    font-weight: 700;
+}
+
+.open li {
+    display: block;
+    width: 100%;
+}
+
+.open li a {
+    display: block;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
 }
