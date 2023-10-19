@@ -9,6 +9,10 @@ p {
     font-family: 'Font2', sans-serif;
 }
 
+.hero img {
+    width: 100%;
+    height: auto;
+}
 
 header {
     background: #0625af;
@@ -72,4 +76,32 @@ footer {
 
 #nonenumber {
     list-style: circle;
+}
+
+.hero {
+    position: relative;
+    border: 1px solid #f1f1f11a;
+}
+
+.hero img {
+    object-fit: cover;
+}
+
+.herolabel {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    background: radial-gradient(#fff, #4D5B97);
+    border: 0, 5px solid rgba(243, 243, 243, 0.75);
+    padding: 1rem;
+    box-shadow: 0 0 2rem #fff;
+    opacity: 0.90;
+}
+
+.herolabel p {
+    margin: 0;
+    padding: .10rem;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: "Font2', sans-serif";
 }
