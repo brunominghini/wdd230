@@ -45,8 +45,13 @@
         </ul>
     </nav>
     <main>
-        <div class="container">
-            <img id="imgbanner" src="images/banner.PNG" alt="heroimage" width="1000" height="300">
+        <div class="container" class="hero">
+            <picture>
+                <source srcset="images/banner_hero_small.webp" media="(max-width: 800px)">
+                <source srcset="images/banner_hero_medium.webp" media="(max-width:2400px)">
+                <source srcset="images/banner_hero_large.webp" media="(max-width: 3200px)">
+                <img id="imgbanner" src="images/banner_hero.webp" alt="hero-pattern" width="6400" height="3600">
+            </picture>
             <div class="joinbutton">Join the Chamber</div>
         </div>
         <div id="backgroundchampagne" class="main-column">
@@ -90,7 +95,7 @@
     </main>
     <footer class="aligncenter">
         <div>
-            <img src="images/chamber.jpeg" alt="moratoflag" width="200px">
+            <img src="images/flag.jpeg" alt="moratoflag" width="200px">
             <h2>Morato City Chamber of Commerce</h2>
             <p>Praça Pompilho Bessa, 16 - Centro</p>
         </div>

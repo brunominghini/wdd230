@@ -12,6 +12,7 @@ p {
 .hero img {
     width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
 header {
@@ -81,10 +82,6 @@ footer {
 .hero {
     position: relative;
     border: 1px solid #f1f1f11a;
-}
-
-.hero img {
-    object-fit: cover;
 }
 
 .herolabel {
