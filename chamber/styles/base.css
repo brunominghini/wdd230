@@ -70,6 +70,9 @@ img {
     text-align: center;
     position: static;
     align-content: center;
+    width: "70%";
+    height: 300px;
+
 }
 
 footer {
@@ -83,7 +86,7 @@ section h3 {
 }
 
 #container {
-position: relative;
+    position: relative;
 }
 
 .joinbutton {
