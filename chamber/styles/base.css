@@ -82,8 +82,8 @@ section h3 {
     border-bottom: #0981b0;
 }
 
-.container {
-    position: relative;
+#container {
+position: relative;
 }
 
 .joinbutton {
