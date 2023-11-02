@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/action_page.php">
+        <label for="Username">Username: </label>
+        <input type="text" id="Username" name="name" title="name" required><br><br>
+        <label for="Password">Password: </label>
+        <input type="password" id="Password" name="Password" title="Password" required
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,20}$"><br><br>
+        <label for="PasswordConfirmation">Password repeated for confirmation: </label>
+        <input type="password" id="PasswordConfirmation" name="PasswordConfirmation" title="Password" required
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,20}$"><br><br>
+        <label for="Email">E-mail: </label>
+        <input type="email" id="Email" name="Email" title="Password" required
+            pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"><br><br>
+
+
+
+    </form>
+</body>
+
+</html>
