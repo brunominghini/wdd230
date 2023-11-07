@@ -1,3 +1,11 @@
+:root {
+    --blue: #0981b0;
+    --green: #008000;
+    --champagne: #bbb01ebe;
+    --brown: #473c3c;
+    --lilac: #662d66;
+}
+
 h1,
 h2,
 h3,
@@ -42,7 +50,7 @@ img {
 }
 
 .colorgreen {
-    color: green;
+    color: #008000;
 }
 
 .colorblue {
@@ -50,16 +58,16 @@ img {
 }
 
 .colorchampagne {
-    color: #bbb01ebe;
+    color: var(--champagne);
 
 }
 
 .colorbrown {
-    color: #473c3c;
+    color: var(--brown);
 }
 
 .colorlilac {
-    color: #662d66;
+    color: var(--lilac);
 }
 
 .backgroundchampagne {
@@ -170,17 +178,20 @@ navigation li a:hover {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
-    padding: 20px;
+    padding: 10px;
 }
 
 .sidebar {
-    background-color: #333;
+    background-color: var(--brown);
     color: #fff;
-    padding: 20px;
-    order: 2;
+    padding: 5px;
+    order: 0;
 }
 
 .content {
-    background-color: #f7f7f7;
     padding: 20px;
+}
+
+.image {
+    width: 100%;
 }

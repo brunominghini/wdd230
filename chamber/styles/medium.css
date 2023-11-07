@@ -43,4 +43,10 @@
         grid-gap: 20px;
         padding: 20px;
     }
+
+    .sidebar {
+        color: #fff;
+        padding: 20px;
+        order: 0;
+    }
 }

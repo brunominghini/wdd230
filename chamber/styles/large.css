@@ -58,4 +58,11 @@
         padding: 20px;
     }
 
+    .sidebar {
+      
+        padding: 20px;
+        order: 0;
+        gap: 10px;
+    }
+
 }
