@@ -57,15 +57,17 @@
         grid-gap: 20px;
         padding: 20px;
     }
-.message {
-    background-color: var(--champagne);
-    padding: 10px;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-    text-align: center;
-}
+
+    .message {
+        background-color: var(--champagne);
+        padding: 10px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
     .sidebar {
-      
+
         padding: 20px;
         order: 0;
         gap: 10px;
