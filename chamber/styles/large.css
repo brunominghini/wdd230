@@ -73,5 +73,12 @@
         gap: 10px;
     }
 
+    .container {
+        display: flex;
+    }
 
+    .column {
+        flex: 1;
+        padding: 30px;
+    }
 }

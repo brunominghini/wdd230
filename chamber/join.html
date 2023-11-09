@@ -23,7 +23,7 @@
 
 <body>
     <header>
-        <h1 class="title">Chamber of Commerce</h1>
+        <h1 class="title">Chamber of Commerce Morato City</h1>
         <div id="mode">
             🕶️
         </div>
@@ -31,9 +31,9 @@
     <nav>
         <button id="menu"></button>
         <ul class="navigation">
-            <li><a href="#">Home</a></li>
-            <li><a href="">Community</a></li>
-            <li><a href="" target="_blank">Opportunitties</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="join.html">Community</a></li>
+            <li><a href="discover.html" target="_blank">Opportunitties</a></li>
             <li><a href="">Scripture</a></li>
             <li>
                 <form id="search" action="/action_page.php">
@@ -45,37 +45,61 @@
         </ul>
     </nav>
     <main>
-        <form class="form" action="thankyou.html" method="get">
-            <label for="firstname">Firstname: </label>
-            <input type="text" id="firstname" name="firstname" title="firstname" required>
-            <br><br>
-            <label for="lastname">Lastname: </label>
-            <input type="lastname" id="lastname" name="lastname" title="lastname" required>
-            <br><br>
-            <label for="title">Title or Position: </label>
-            <input type="title" id="title" name="title" title="title" pattern="[a-zA-Z0-9].{7,}$" required>
-            <br><br>
-            <label for="email">E-mail: </label>
-            <input type="email" id="Email" name="Email" title="Please enter a valid email address"
-                pattern="[a-zA-Z0-9._%+-]+@$" required>
-            <br><br>
-            <label for="phonenumber">Mobile phone number: </label>
-            <input type="phonenumber" id="phonenumber" name="phonenumber" title="Please enter a mobile phone number"
-                pattern="[0-9]" required><br><br>
-            <label for="org_name">Organization Name:</label>
-            <input type="text" id="org_name" name="org_name" required>
-            <br><br>
-            <label for="membership_level">Select Membership Level:</label>
-            <select id="membership_level" name="membership_level">
-                <option value="NP Membership">NP Membership (Free)</option>
-                <option value="Bronze Membership">Bronze Membership</option>
-                <option value="Silver Membership">Silver Membership</option>
-                <option value="Gold Membership">Gold Membership</option>
-            </select>
-            <br><br>
-            <input type="submit" value="Submit">
-            <br><br>
-        </form>
+        <div class="container">
+            <div class="column"></div>
+            <form class="form" action="thankyou.html" method="get">
+                <label for="firstname">Firstname: </label><br>
+                <input type="text" id="firstname" name="firstname" title="firstname" required>
+                <br><br>
+                <label for="lastname">Lastname: </label><br>
+                <input type="lastname" id="lastname" name="lastname" title="lastname" required>
+                <br><br>
+                <label for="title">Title or Position: </label><br>
+                <input type="title" id="title" name="title" title="title" pattern="[a-zA-Z\s-]{7,}" required>
+                <br><br>
+                <label for="email">E-mail: </label><br>
+                <input type="email" id="Email" name="Email" title="Please enter a valid email address"
+                    pattern="[a-zA-Z0-9._%+-]+@$" required>
+                <br><br>
+                <label for="phonenumber">Mobile phone number: </label><br>
+                <input type="phonenumber" id="phonenumber" name="phonenumber" title="Please enter a mobile phone number"
+                    required><br><br>
+                <label for="org_name">Organization Name:</label><br>
+                <input type="text" id="org_name" name="org_name" required>
+                <br><br>
+                <label for="membership_level">Select Membership Level:</label><br>
+                <select id="membership_level" name="membership_level">
+                    <option value="NP Membership">NP Membership (Free)</option>
+                    <option value="Bronze Membership">Bronze Membership</option>
+                    <option value="Silver Membership">Silver Membership</option>
+                    <option value="Gold Membership">Gold Membership</option>
+                </select>
+                <br><br>
+                <label for="description">Description:</label><br>
+                <input type="text" id="description" name="description"><br><br>
+                <button id="btnSubmit" type="submit">Join</button>
+                <br><br>
+            </form>
+            <div class="column">
+                <h3>Membership Levels and Benefits</h3>
+                <p><strong>Level 1:</strong> Bronze Membershi</p>
+                <ul>
+                    <li>Discounts on events</li>
+                    <li>Access to training resources</li>
+                </ul>
+                <p><strong>Level 2:</strong> Silver Membership</p>
+                <ul>
+                    <li>Exclusive special events</li>
+                    <li>Homepage advertising</li>
+                </ul>
+
+                <p><strong>Level 3:</strong> Gold Membership</p>
+                <ul>
+                    <li>Significant event discounts</li>
+                    <li>Prioritized access to training</li>
+                </ul>
+            </div>
+        </div>
     </main>
     <footer>
         <div>

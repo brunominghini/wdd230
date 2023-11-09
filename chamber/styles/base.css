@@ -18,8 +18,22 @@ p {
     text-align: center;
 }
 
+.title {
+    text-align: center;
+}
+
 .aligncenter {
     text-align: center;
+}
+
+.container {
+    display: grid;
+}
+
+.column {
+    flex: 1;
+    padding: 30px;
+    gap: 10px;
 }
 
 
