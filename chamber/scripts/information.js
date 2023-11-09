@@ -44,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function displayMessage(message) {
     const sidebar = document.querySelector(".sidebar");
     const messageElement = document.createElement("p");
+    messageElement.classList.add("message");
     messageElement.textContent = message;
-    sidebar.appendChild(messageElement);
+    sidebar.insertBefore(messageElement, sidebar.firstChild);
 }

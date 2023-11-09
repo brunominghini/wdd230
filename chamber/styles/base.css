@@ -181,6 +181,14 @@ navigation li a:hover {
     padding: 10px;
 }
 
+.message {
+    background-color: var(--champagne);
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
 .sidebar {
     background-color: var(--brown);
     color: #fff;
