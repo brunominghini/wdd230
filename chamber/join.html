@@ -45,14 +45,14 @@
         </ul>
     </nav>
     <main>
-        <form action="thankyou.html" method="get">
-            <label for="firstname">firstname: </label>
+        <form class="form" action="thankyou.html" method="get">
+            <label for="firstname">Firstname: </label>
             <input type="text" id="firstname" name="firstname" title="firstname" required>
             <br><br>
-            <label for="lastname">lastname: </label>
-            <input type="lastname" id="lastname" name="lastname" title="lastname" required pattern="[a-zA-Z0-9].{8,}$">
+            <label for="lastname">Lastname: </label>
+            <input type="lastname" id="lastname" name="lastname" title="lastname" required>
             <br><br>
-            <label for="title">lastname : </label>
+            <label for="title">Title or Position: </label>
             <input type="title" id="title" name="title" title="title" pattern="[a-zA-Z0-9].{7,}$" required>
             <br><br>
             <label for="email">E-mail: </label>
@@ -65,15 +65,6 @@
             <label for="org_name">Organization Name:</label>
             <input type="text" id="org_name" name="org_name" required>
             <br><br>
-
-            <label for="text_type">Text Type:</label>
-            <input type="text" id="text_type" name="text_type">
-            <br><br>
-
-            <label for="org_id">Organization ID:</label>
-            <input type="text" id="org_id" name="org_id">
-            <br>
-
             <label for="membership_level">Select Membership Level:</label>
             <select id="membership_level" name="membership_level">
                 <option value="NP Membership">NP Membership (Free)</option>
@@ -81,8 +72,9 @@
                 <option value="Silver Membership">Silver Membership</option>
                 <option value="Gold Membership">Gold Membership</option>
             </select>
-            <br>
+            <br><br>
             <input type="submit" value="Submit">
+            <br><br>
         </form>
     </main>
     <footer>
