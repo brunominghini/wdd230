@@ -48,3 +48,7 @@ function displayMessage(message) {
     messageElement.textContent = message;
     sidebar.insertBefore(messageElement, sidebar.firstChild);
 }
+
+var timestampInput = document.getElementById("timestamp");
+
+timestampInput.value = Date.now();
