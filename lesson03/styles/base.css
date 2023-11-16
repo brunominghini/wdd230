@@ -1,0 +1,79 @@
+h1 {
+    text-align: center;
+}
+
+section {
+    text-align: center;
+}
+
+#center {
+    text-align: center;
+}
+
+#colorgreen {
+    color: green;
+}
+
+#colorblue {
+    color: #0981b0
+}
+
+#colorchampagne {
+    color: #bbb01ebe;
+}
+
+#colorbrown {
+    color: #473c3c;
+}
+
+#colorlilac {
+    color: #662d66;
+}
+
+.fontfamily1 {
+    font-family: 'Mooli', sans-serif;
+}
+
+.fontfamily2 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.schemacolor {
+    width: 30px;
+}
+
+.wireframe {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.container {
+    position: relative;
+    width: 45%;
+}
+
+.container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container .content {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 95%;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+}
+
+example {
+    display: flex;
+    align-items: center;
+}

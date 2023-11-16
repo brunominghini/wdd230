@@ -1,0 +1,53 @@
+:root {
+    --back: black;
+    --back2: gray;
+    --foredark: #1a1a1a;
+    --forelight: #302c2c;
+    --border: #333333cc;
+    --borderlight: #e7e2e24d;
+    --shadow: #050404;
+    --zebra: #464444;
+}
+
+body {
+    font-family: "Verdana", Arial, serif;
+}
+
+table {
+    margin: 8px auto;
+    border: 2px double;
+    box-shadow: 0 0 10px #050404;
+    border-collapse: collapse;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: #460505;
+    font-size: .85rem;
+}
+
+tr:first-child th,
+.highlight {
+    background-color: #333333cc;
+    color: #e7e2e24d;
+}
+
+th,
+td {
+    padding: 7px 15px;
+    border: 1px solid var(--borderlight);
+}
+
+th {
+    background-color: var(--back2);
+    font-size: larger;
+}
+
+td {
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--zebra);
+}

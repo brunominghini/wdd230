@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
+body {
+    font-family: Mooli, helvetica, sans-serif;
+}
+
+header,
+main,
+footer {
+    max-width: 760px;
+    margin: 0 auto;
+
+}
+
+marquee {
+    padding: 1rem;
+    background-color: #eee;
+}
+
+h1 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.columns-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: rgb(238, 238, 238);
+
+}
+
+@media screen and (max-width: 768px) {
+    .columns-main {
+        grid-template-columns: 1fr 1fr;
+        /*gap: 1rem;
+        padding: 2rem;
+        height: 60px;
+        width: 30%;*/
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .columns-main {
+        grid-template-columns: 1fr;
+        /*gap: 1rem;
+        padding: 2rem;
+        height: 60px;
+        width: 30%;*/
+    }
+}
+
+h2 {
+    color: navy;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+.callout {
+    color: #0a0a0a;
+    background-color: #f8b1eb;
+}
+
+footer {
+    margin-top: 1rem;
+    border-top: 1px solid #0000001a;
+    font-size: smaller;
+    padding: .5rem 0;
+}
+
+.content {
+    padding: 5px;
+}
+
+
+#ferrari {
+    color: red;
+}
+
+#two2ETLabs {
+    color: gray;
+}
+
+#candy {
+    color: #03e285;
+}
+
+img {
+    width: 300px;
+}

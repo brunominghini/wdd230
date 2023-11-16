@@ -1,0 +1,30 @@
+:root {
+    --rangevalue: #eb2d07;
+    --button: #6161f0;
+    --range: #66dbc2;
+}
+
+#r {
+    width: 180px;
+    margin-bottom: 0;
+    background-color: var(--range);
+}
+
+#rangevalue {
+    font-size: 4rem;
+    color: var(--rangevalue);
+}
+
+#rangevalues {
+    display: flex;
+    margin: 0 0 0 25px;
+    width: 170px;
+}
+
+#rangevalues option {
+    flex: 1 1 auto;
+}
+
+#btnSubmit {
+    background-color: var(--button);
+}
