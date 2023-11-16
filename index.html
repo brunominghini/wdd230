@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bruno Minghini">
+    <meta name="description" content="Bruno Afonso Minghini. 
+    WDD 230 - Web Frontend Development - a course that focuses on the application of front-end 
+    web design and development technologies">
+    <meta property="og:title" content="My Home">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://mural.blogfolha.uol.com.br/files/2018/11/FOTO-3.jpg">
+    <meta property="og:url" content="https://brunominghini.github.io/wdd230/index.html">
+    <meta property="og:description"
+        content="Bruno Afonso Minghini. WDD 230 - Web Frontend Development - a course that focuses on the application of front-end web design and development technologies">
+    <title>Bruno Minghini - WDD 230 - Web Frontend Development</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/largeview.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img src="images/profile.webp" alt="profile" width="200">
+        <h1>Bruno Afonso Minghini</h1>
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="chamber/siteplan.html">Site Plan</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng&id=p6#p6"
+                    target="_blank">Scripture</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 400px)">
+                <img src="images/hero-large.webp" alt="hero-pattern" width="960" height="750">
+            </picture>
+            <div class="herolabel">
+                <p>Washington D.C. Temple</p>
+            </div>
+        </div>
+        <h2 id="course">WDD 230: Web Frontend Development</h2>
+        <div class="main-column">
+            <section class="card">
+                <div>
+                    <h3>Learning Activies</h3>
+                    <ul id="course-list">
+                        <li><a href="lesson01/holygrail.html">Lesson01</a></li>
+                        <li><a href="lesson02/design-principles.html">Lesson02 - Design</a></li>
+                        <li>Lesson03
+                            <ol id="nonenumber">
+                                <li><a href="lesson03/css_combinators.html">CSS Combinators</a></li>
+                                <li><a href="https://codepen.io/brunominghini/pen/gOZKYLM?editors=1111">CSS
+                                        Pseudo-elements</a></li>
+                                <li><a href="https://codepen.io/brunominghini/pen/rNoKBKP?editors=0100">Responsive
+                                        "Hamburger" Menu</a></li>
+                            </ol>
+                        </li>
+                        <li>Lesson04
+                            <a href="https://codepen.io/brunominghini/pen/mdazGoL">Pseudo-class example
+                                solution.</a>
+                        </li>
+                        <li>Lesson05
+                            <a href="lesson05/bom.html"> Book of Mormon Favorite Chapters Application
+                                solution.</a>
+                        </li>
+                        <li>Lesson 06: <a href="lesson06/images/landscape.webp">WebP</a> | <a
+                                href="Lesson06/responsive-images.html.html">Responsive Images</a></li>
+                        <li>Lesson 07: <a href="lesson03/lazyload.html">Lazyload</a></li>
+                        <li>Lesson 08:<a href="lesson08/tablebuild.html">Table Building</table></a>|<a
+                                href="form.html">Form</a> </li>
+                        <li>Lesson 09:<a href="lesson09/prophets.html">Prophets</a></li>
+                        <li>10</li>
+                    </ul>
+                </div>
+            </section>
+            <section class=card>
+                <h3>Information</h3>
+                <P class="Information">São Paulo-Brazil</p>
+                <p class="Information">🌅🌊⛱ 35º Celsius - Summer</p>
+                <h5 class="Information">Page Visits:<span id="visitCount">1</span></h5>
+            </section>
+        </div>
+        <div>
+            <iframe id="maps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58641.02839511812!2d-46.76920904095312!3d-23.27711412268219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cee6e07ae50819%3A0x96c402050d2dd76a!2sFrancisco%20Morato%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1696292445336!5m2!1spt-BR!2sbr"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span></p>
+        <h4> Bruno Minghini.</h4>
+        <h4>BRAZIL</h4>
+        <img src="images/flagbrazil.avif" alt="brazilflag" width="100">
+        <h4>Last Modification: <span id="lastModified"></span></h4>
+    </footer>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/getdates.js"></script>
+</body>
+
+</html>
