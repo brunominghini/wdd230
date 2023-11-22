@@ -5,14 +5,16 @@ async function getLinks() {
     try {
         const response = await fetch(linksURL);
         const data = await response.json();
+        console.log(data);
         displayLinks(data.lessons);
 
     } catch (error) {
-        console.error("Ocorreu um erro ao buscar os links:", error);
+        console.error("Error:", error);
     }
 }
 
 function displayLinks(lessons) {
+    console.log(lessons);
     const courseList = document.getElementById("course-list");
 
     lessons.forEach(lesson => {
