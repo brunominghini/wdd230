@@ -2,10 +2,14 @@ const baseURL = "https://github.com/brunominghini/wdd230/";
 const linksURL = "https://github.com/brunominghini/wdd230/data/link.json";
 
 async function getLinks() {
-    const response = await fetch(linksURL);
-    const data = await response.json();
-    displayLinks(data);
+    try {
+        const response = await fetch(linksURL);
+        const data = await response.json();
+        displayLinks(data.lessons);
 
+    } catch (error) {
+        console.error("Ocorreu um erro ao buscar os links:", error);
+    }
 }
 
 function displayLinks(lessons) {
