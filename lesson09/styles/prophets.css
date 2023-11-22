@@ -10,7 +10,7 @@ footer {
     position: relative;
 }
 
-#card {
+#cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
 }
