@@ -12,5 +12,14 @@ footer {
 
 #cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+}
+
+#cards section {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    
 }
