@@ -8,31 +8,30 @@ async function getLinks() {
 
 }
 
-function displayLinks(weeks) {
-    const linksContainer = document.getElementById("links-container");
+function displayLinks(lessons) {
+    const courseList = document.getElementById("course-list");
 
-    weeks.forEach(week => {
-        const weekElement = document.createElement("div");
-        weekElement.classList.add("week");
-
-        const weekTitle = document.createElement("h3");
-        weekTitle.textContent = `Semana ${week.week}`;
+    lessons.forEach(lesson => {
+        const lessonItem = document.createElement("li");
+        const lessonTitle = document.createElement("a");
+        lessonTitle.textContent = `Lesson ${lesson.lesson}`;
+        lessonTitle.href = "#";
 
         const linksList = document.createElement("ul");
 
-        week.links.forEach(link => {
+        lesson.links.forEach(link => {
             const listItem = document.createElement("li");
             const linkElement = document.createElement("a");
-            linkElement.href = `${baseURL}${link.url}`;
+            linkElement.href = link.url;
             linkElement.textContent = link.title;
 
             listItem.appendChild(linkElement);
             linksList.appendChild(listItem);
         });
 
-        weekElement.appendChild(weekTitle);
-        weekElement.appendChild(linksList);
-        linksContainer.appendChild(weekElement);
+        lessonItem.appendChild(lessonTitle);
+        lessonItem.appendChild(linksList);
+        courseList.appendChild(lessonItem);
     });
 }
 
