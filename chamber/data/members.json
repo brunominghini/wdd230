@@ -40,7 +40,7 @@
             "name": "Fisio Home",
             "address": "Rua Franco da Rocha",
             "contact": "(11)44892304",
-            "logo": "images/fisiohome",
+            "logo": "images/fisiohome.png",
             "membershiplevel": "Level 2",
             "otherinformation": "Example",
             "websiteurl": "https://fisiohomefranco.com.br"
@@ -55,13 +55,13 @@
             "websiteurl": "https://www.donpaco.com.br/"
         },
         {
-            "name": "Exemplo2",
-            "address": "Rua 1, 150",
-            "contact": "(11) 44886232",
-            "logo": "images/example",
-            "membershiplevel": "Level",
+            "name": "Ortobom Francisco Morato",
+            "address": "Tv. José Benedito Ryan,     ",
+            "contact": "(11) 912802803",
+            "logo": "images/ortobom.png",
+            "membershiplevel": "Level 2",
             "otherinformation": "Example",
-            "websiteurl": "https://example.com.br"
+            "websiteurl": "https://www.ortobom.com.br/loja/franciscomorato"
         }
     ]
 }
