@@ -1,5 +1,5 @@
 {
-    "prophets": [
+    "members": [
         {
             "name": "Farmácia Cristal",
             "address": "Praça Pompilho Bessa",
@@ -7,7 +7,7 @@
             "logo": "images/farmacristal.jpeg",
             "membershiplevel": "Level 3",
             "otherinformation": "Example",
-            "websiteurl,": "https://www.facebook.com/farmacristal"
+            "websiteurl": "https://www.facebook.com/farmacristal"
         },
         {
             "name": "Best Tech",
@@ -16,7 +16,7 @@
             "logo": "images/BestTech.png",
             "membershiplevel": "Level 2",
             "otherinformation": "Example",
-            "websiteurl,": "https://www.facebook.com/besttech"
+            "websiteurl": "https://www.facebook.com/besttech"
         },
         {
             "name": "Khemeia",
@@ -25,7 +25,7 @@
             "logo": "images/khemeia.png",
             "membershiplevel": "Level 1",
             "otherinformation": "example",
-            "websiteurl,": "https://www.farmaciakhemeia.com.br/"
+            "websiteurl": "https://www.farmaciakhemeia.com.br/"
         },
         {
             "name": "Buffet Palharaça Lili & CIA",
@@ -34,7 +34,7 @@
             "logo": "images/Lili.png",
             "membershiplevel": "Level 1",
             "otherinformation": "Example",
-            "websiteurl,": "https://buffetpalhacalili.com.br"
+            "websiteurl": "https://buffetpalhacalili.com.br"
         },
         {
             "name": "Fisio Home",
@@ -43,7 +43,7 @@
             "logo": "images/fisiohome",
             "membershiplevel": "Level 2",
             "otherinformation": "Example",
-            "websiteurl,": "https://fisiohomefranco.com.br"
+            "websiteurl": "https://fisiohomefranco.com.br"
         },
         {
             "name": "Don Paco",
@@ -52,7 +52,7 @@
             "logo": "images/logodonpaco.webp",
             "membershiplevel": "Level 3",
             "otherinformation": "Example",
-            "websiteurl,": "https://www.donpaco.com.br/"
+            "websiteurl": "https://www.donpaco.com.br/"
         },
         {
             "name": "Exemplo2",
@@ -61,7 +61,7 @@
             "logo": "images/example",
             "membershiplevel": "Level",
             "otherinformation": "Example",
-            "websiteurl,": "https://example.com.br"
+            "websiteurl": "https://example.com.br"
         }
     ]
 }
