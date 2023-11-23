@@ -1,0 +1,67 @@
+{
+    "prophets": [
+        {
+            "name": "Farmácia Cristal",
+            "address": "Praça Pompilho Bessa",
+            "contact": "(11) 48890202",
+            "logo": "images/farmacristal.jpeg",
+            "membership level": "Level 3",
+            "other information": "Example",
+            "website URLs,": "https://www.facebook.com/farmacristal"
+        },
+        {
+            "name": "Best Tech",
+            "address": "Rua Pau Brasil, 399",
+            "contact": "(11)986054903",
+            "logo": "images/BestTech.png",
+            "membership level": "Level 2",
+            "other information": "Example",
+            "website URLs,": "https://www.facebook.com/besttech"
+        },
+        {
+            "name": "Khemeia",
+            "address": "Rua Progresso ",
+            "contact": "(11) 44886578",
+            "logo": "images/khemeia.png",
+            "membership level": "Level 1",
+            "other information": "example",
+            "website URLs,": "https://www.farmaciakhemeia.com.br/"
+        },
+        {
+            "name": "Buffet Palharaça Lili & CIA",
+            "address": "Woodruff",
+            "contact": "(11)956487823",
+            "logo": "images/Lili.png",
+            "membership level": "Connecticut",
+            "other information": 34,
+            "website URLs,": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/wilford-woodruff-82910-gallery.jpg"
+        },
+        {
+            "name": "Lorenzo",
+            "address": "Snow",
+            "contact": "03 April 1814",
+            "death": "19 October 1901",
+            "membership level": "Ohio",
+            "other information": 42,
+            "website URLs,": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/lorenzo-snow-82911-gallery.jpg"
+        },
+        {
+            "name": "Joseph F.",
+            "address": "Smith",
+            "contact": "12 November 1838",
+            "death": "19 November 1918",
+            "membership level": "Missouri",
+            "other information": 48,
+            "website URLs,": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/joseph-f-smith-82912-gallery.jpg"
+        },
+        {
+            "name": "Heber J.",
+            "address": "Grant",
+            "contact": "22 November 1856",
+            "death": "14 May 1945",
+            "membership level": "Utah",
+            "other information": 12,
+            "website URLs,": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/heber-j-grant-82913-gallery.jpg"
+        }
+    ]
+}
