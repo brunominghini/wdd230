@@ -222,7 +222,6 @@ navigation li a:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-
 }
 
 #cards section {
@@ -231,4 +230,51 @@ navigation li a:hover {
     padding: 10px;
     text-align: center;
 
+}
+
+.card img {
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px #333;
+}
+
+.card section {
+    margin: 0.1rem;
+}
+
+.card h3 {
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 0;
+    padding: 0.25rem;
+}
+
+.list section img {
+    display: none;
+}
+
+.list section h3 {
+    font-size: 1rem;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+
+section p {
+    font-weight: 600;
+    font-size: smaller;
+}
+
+section a {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: navy;
+    letter-spacing: 1.1pt;
 }
