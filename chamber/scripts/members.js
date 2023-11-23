@@ -21,10 +21,24 @@ const displayMembers = (members) => {
         let url = document.createElement('href');
 
         name.textContent = ` ${member.name}`;
-        logo.setAttribute('src', member.websiteurl);
+        address.textContent = ` ${member.address}`;
+        contact.textContent = ` ${member.contact}`;
+        logo.setAttribute('src', member.logo);
         logo.setAttribute('alt', `Logo ${member.name}`);
         logo.setAttribute('loading', 'lazy');
         logo.setAttribute('width', '100');
         logo.setAttribute('height', '150');
+        membership.textContent = ` ${member.membershiplevel}`;
+        information.textContent = ` ${member.otherinformation}`;
+        url.textContent = `${member.websiteurl}`;
+
+
+        card.appendChild(name);
+        card.appendChild(address);
+        card.appendChild(contact);
+        card.appendChild(logo);
+        card.appendChild(membership);
+        card.appendChild(information);
+        card.appendChild(url);
     });
 }
