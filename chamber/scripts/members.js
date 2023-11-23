@@ -20,23 +20,23 @@ const displayMembers = (members) => {
         let information = document.createElement('p');
         let url = document.createElement('a');
 
-        name.textContent = ` ${member.name}`;
-        address.textContent = ` ${member.address}`;
-        contact.textContent = ` ${member.contact}`;
         logo.setAttribute('src', member.logo);
         logo.setAttribute('alt', `Logo ${member.name}`);
         logo.setAttribute('loading', 'lazy');
         logo.setAttribute('width', '170');
         logo.setAttribute('height', '50');
+        name.textContent = ` ${member.name}`;
+        address.textContent = ` ${member.address}`;
+        contact.textContent = ` ${member.contact}`;
         membership.textContent = ` ${member.membershiplevel}`;
         information.textContent = ` ${member.otherinformation}`;
         url.textContent = `${member.websiteurl}`;
 
 
+        card.appendChild(logo);
         card.appendChild(name);
         card.appendChild(address);
         card.appendChild(contact);
-        card.appendChild(logo);
         card.appendChild(membership);
         card.appendChild(information);
         card.appendChild(url);
