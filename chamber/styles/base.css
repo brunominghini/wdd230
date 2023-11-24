@@ -278,3 +278,8 @@ section a {
     color: navy;
     letter-spacing: 1.1pt;
 }
+
+#weather {
+    text-align: center;
+    align-items: center;
+}
