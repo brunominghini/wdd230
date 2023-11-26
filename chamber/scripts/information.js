@@ -1,3 +1,7 @@
+
+const currentDate = new Date();
+const currentDay = currentDate.getDay();
+
 function getCurrentYear() {
     const currentYear = new Date().getFullYear();
     return currentYear;

@@ -22,9 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function displayForecast(data) {
-        // Limpar o container antes de adicionar novas previsões
         forecastContainer.innerHTML = '';
-
         const currentDate = new Date();
         const threeDayForecast = [];
 
@@ -33,15 +31,17 @@ document.addEventListener('DOMContentLoaded', () => {
             const isSameDay = forecastDate.getDate() === currentDate.getDate();
 
             if (isSameDay) {
-                // Exibe o ícone do clima de hoje
                 const iconCode = entry.weather[0].icon;
                 const iconUrl = `https://openweathermap.org/img/w/${iconCode}.png`;
                 weatherIconToday.src = iconUrl;
             }
 
-            // Adiciona somente uma previsão por dia
-            if (isSameDay || (forecastDate.getDate() !== currentDate.getDate() && forecastDate.getDate() <= currentDate.getDate() + 3)) {
-                if (!threeDayForecast.some(forecast => forecastDate.getDate() === forecast.dt.getDate())) {
+            const daysDifference = Math.ceil((forecastDate - currentDate) / (1000 * 60 * 60 * 24));
+
+            if (daysDifference > 0 && daysDifference < 3) {
+                const forecastExists = threeDayForecast.some(forecast => forecast.dt.getDate() === forecastDate.getDate());
+
+                if (!forecastExists) {
                     threeDayForecast.push({
                         dt: forecastDate,
                         temperature: entry.main.temp,

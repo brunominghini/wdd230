@@ -24,5 +24,3 @@ function showList() {
     display.classList.remove("grid");
 }
 
-const currentDate = new Date();
-const currentDay = currentDate.getDay(); // 0 for Sunday, 1 for Monday, etc.
