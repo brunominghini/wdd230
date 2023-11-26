@@ -275,11 +275,31 @@ section p {
 section a {
     font-family: "Roboto", Arial, sans-serif;
     font-size: 0.85rem;
-    color: navy;
+    color: var(--lilac);
     letter-spacing: 1.1pt;
 }
 
 #weather {
     text-align: center;
     align-items: center;
+}
+
+.banner {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--lilac);
+    text-align: center;
+    padding: 10px 0;
+    z-index: 9999;
+}
+
+#closeBanner {
+    background-color: #ddd;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 5px;
 }
