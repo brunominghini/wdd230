@@ -1,5 +1,4 @@
 
-
 function showOrHideBanner() {
     const currentDate = new Date();
     const currentDay = currentDate.getDay();
@@ -11,7 +10,6 @@ function showOrHideBanner() {
         banner.style.display = 'none';
     }
 }
-
 
 document.getElementById('closeBanner').addEventListener('click', function () {
     document.getElementById('banner').style.display = 'none';
