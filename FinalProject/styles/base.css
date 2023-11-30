@@ -1,7 +1,89 @@
 :root {
-    --blue: #1f3661;
+    --blue: #1f3c61;
     --black: #080808;
-    --champagne: #bbb01ebe;
+    --yellow: #cec54c;
     --red: #aa0505;
     --white: #faf9fa;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    font-family: 'Mooli', sans-serif;
+}
+
+.navigation {
+    border-style: groove;
+}
+
+.navigation li {
+    display: grid;
+}
+
+.navigation li a {
+    display: flexbox;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--black);
+}
+
+navigation li a:hover {
+    background-color: var(--white);
+    color: var(--black);
+    font-weight: 700;
+}
+
+.open li {
+    display: block;
+    width: 100%;
+}
+
+.open li a {
+    display: block;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+#mode {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.title {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+}
+
+.main-column {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+}
+
+.column {
+    flex: 1;
+    padding: 30px;
+    gap: 10px;
+}
+
+footer {
+    border-style: ridge;
+    background-color: var(--white);
+    text-align: center;
 }
