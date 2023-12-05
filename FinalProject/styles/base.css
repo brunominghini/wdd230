@@ -14,8 +14,25 @@ p {
     font-family: 'Mooli', sans-serif;
 }
 
+nav {
+    background-color: var(--white);
+    opacity: 70%;
+
+    flex-direction: row;
+}
+
+.navbar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    display: flexbox;
+    flex-direction: row;
+}
+
 .navigation {
     border-style: groove;
+    flex-direction: row;
 }
 
 .navigation li {
@@ -67,6 +84,7 @@ navigation li a:hover {
 
 .container {
     display: grid;
+    flex-direction: row;
 }
 
 .main-column {
@@ -103,4 +121,34 @@ td {
 
 th {
     background-color: #f2f2f2;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 380px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.joinbutton {
+    position: absolute;
+    top: 40%;
+    left: 90%;
+    transform: translate(-30%, -30%);
+    background-color: var(--yellow);
+    border: none;
+    color: var(--white);
+    padding: 40px 60px;
+    text-align: center;
+    text-decoration: wavy;
+    display: flex;
+    font-size: 20px;
+    border-radius: 4px;
+    box-shadow: 0 8px 16px 0 #473c3c, 0 6px 20px 0 #473c3c;
+    opacity: 80%;
+
 }
