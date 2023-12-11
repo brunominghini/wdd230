@@ -16,27 +16,30 @@ p {
 
 nav {
     background-color: var(--white);
-    opacity: 70%;
+    opacity: 80%;
 
     flex-direction: row;
 }
 
 .navbar {
     position: absolute;
-    top: 20px;
-    left: 20px;
-    z-index: 1000;
+    top: 50px;
+    left:50px;
+    z-index: 2000;
     display: flexbox;
     flex-direction: row;
 }
 
 .navigation {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
     border-style: groove;
-    flex-direction: row;
 }
 
 .navigation li {
-    display: grid;
+    display: inline-block;
 }
 
 .navigation li a {
@@ -126,8 +129,7 @@ th {
 .hero {
     position: relative;
     width: 100%;
-    min-height: 380px;
-
+    min-height: 280px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -136,19 +138,19 @@ th {
 
 .joinbutton {
     position: absolute;
-    top: 40%;
-    left: 90%;
-    transform: translate(-30%, -30%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: var(--yellow);
     border: none;
     color: var(--white);
-    padding: 40px 60px;
+    padding: 50px 600px;
     text-align: center;
     text-decoration: wavy;
     display: flex;
-    font-size: 20px;
-    border-radius: 4px;
+    font-size: 500 px;
+    border-radius: 1px;
     box-shadow: 0 8px 16px 0 #473c3c, 0 6px 20px 0 #473c3c;
-    opacity: 80%;
+    opacity: 70%;
 
 }
