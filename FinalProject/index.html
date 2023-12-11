@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/mobileview.css">
-    <link rel="icon" href="images/favicon (1).ico">
+    <link rel="icon" href="images/favicon.ico">
 </head>
 
 <body>
@@ -39,9 +39,10 @@
     <main>
         <div class="hero" id="container">
             <picture>
-                <source srcset="images/banner.webp" media="(max-width: 800px)">
-                <source srcset="images/banner.webp" media="(max-width: 3200px)">
-                <img id="imgbanner" src="images/banner.webp" alt="hero-pattern" width="1500" height="700">
+                <source srcset="images/banner_small.webp" media="(max-width: 800px)">
+                <source srcset="images/banner_medium.webp" media="(max-width:2400px)">
+                <source srcset="images/banner_large.webp" media="(max-width: 3200px)">
+                <img id="imgbanner" src="images/banner.webp" alt="hero-pattern" style="width: 100%;" loading="lazy">
             </picture>
             <div class="joinbutton">Reserve</div>
         </div>
@@ -60,8 +61,8 @@
             <p><span id="lastModified"></span></p>
         </div>
     </footer>
-    <script src="scripts/information.js"></script>
     <script src="scripts/behaviors.js"></script>
+    <script src="scripts/information.js"></script>
     <script src="scripts/banner.js"></script>
 </body>
 

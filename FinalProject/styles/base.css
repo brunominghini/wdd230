@@ -13,7 +13,17 @@ h4,
 p {
     font-family: 'Mooli', sans-serif;
 }
+header {
+    text-align: center;
+    padding: 20px 0;
+}
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
 nav {
     background-color: var(--white);
     opacity: 80%;
@@ -22,12 +32,9 @@ nav {
 }
 
 .navbar {
-    position: absolute;
-    top: 50px;
-    left:50px;
-    z-index: 2000;
-    display: flexbox;
-    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .navigation {
@@ -36,10 +43,13 @@ nav {
     gap: 10px;
     margin-top: 20px;
     border-style: groove;
+    padding: 0;
+   
 }
 
 .navigation li {
     display: inline-block;
+    margin: 0 10px;
 }
 
 .navigation li a {
@@ -48,6 +58,7 @@ nav {
     text-align: center;
     text-decoration: none;
     color: var(--black);
+    font-size: 18px; /
 }
 
 navigation li a:hover {
@@ -88,6 +99,7 @@ navigation li a:hover {
 .container {
     display: grid;
     flex-direction: row;
+    opacity: 90%;
 }
 
 .main-column {
@@ -148,7 +160,7 @@ th {
     text-align: center;
     text-decoration: wavy;
     display: flex;
-    font-size: 500 px;
+    font-size: 24px;
     border-radius: 1px;
     box-shadow: 0 8px 16px 0 #473c3c, 0 6px 20px 0 #473c3c;
     opacity: 70%;
