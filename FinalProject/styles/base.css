@@ -38,14 +38,17 @@ nav {
 }
 
 .navigation {
-    display: flex;
-    flex-direction: column;
+    display: none;
+    flex-direction: initial;
     align-items: center;
     gap: 10px;
     margin-top: 20px;
     border-style: groove;
     padding: 0;
    
+}
+.navigation.open {
+    display: flex;
 }
 
 .navigation li {
