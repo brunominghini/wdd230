@@ -20,6 +20,7 @@
     <link rel="icon" href="images/favicon (1).ico">
 </head>
 
+
 <body>
     <header>
         <h1 class="title">~Scoots~ Rentals</h1>
@@ -27,17 +28,26 @@
             🕶️
         </div>
     </header>
-    <nav>
+    <nav class="navbar">
         <button id="menu"></button>
         <ul class="navigation">
             <li><a href="index.html">Home Page</a></li>
             <li><a href="rentals.html">Rentals</a></li>
             <li><a href="reservations.html">Reservations</a></li>
             <li><a href="contact.html" target="_blank">Contact</a></li>
-            </li>
         </ul>
     </nav>
-    <main></main>
+    <main>
+        <div class="hero" id="container">
+            <picture>
+                <source srcset="images/banner_small.webp" media="(max-width: 800px)">
+                <source srcset="images/banner_medium.webp" media="(max-width:2400px)">
+                <source srcset="images/banner_large.webp" media="(max-width: 3200px)">
+                <img id="imgbanner" src="images/banner.webp" alt="hero-pattern" style="width: 100%;" loading="lazy">
+            </picture>
+            <div class="joinbutton"> <a href="reservations.html">Reserve</a></div>
+        </div>
+    </main>
     <footer>
         <div>
             <picture>
@@ -46,14 +56,14 @@
             <h2>&copy; 🛵 ~Scoots~ Web site</h2>
         </div>
         <div>
-            <span id="currentYear"></span>
             <p><b>Bruno A. Minghini</b></p>
             <p>WDD 230 Project</p>
+            <span id="currentYear"></span>
             <p><span id="lastModified"></span></p>
         </div>
     </footer>
+    <script src="scripts/behavior.js"></script>
     <script src="scripts/information.js"></script>
-    <script src="scripts/behaviors.js"></script>
     <script src="scripts/banner.js"></script>
 </body>
 
