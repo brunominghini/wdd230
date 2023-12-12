@@ -56,6 +56,16 @@
         text-decoration: none;
         color: black;
     }
+    .open li {
+        display: block;
+        width: 100%;
+    }
+    .open li a {
+        display: block;
+    }
+
+    
+    
 
     #menu {
         display: block;

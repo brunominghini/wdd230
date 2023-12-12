@@ -118,14 +118,8 @@ navigation li a:hover {
     font-weight: 700;
 }
 
-.open li {
-    display: block;
-    width: 100%;
-}
 
-.open li a {
-    display: block;
-}
+
 
 #menu{
     display: none;
