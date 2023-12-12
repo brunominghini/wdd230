@@ -17,6 +17,48 @@ header {
     text-align: center;
     padding: 20px 0;
 }
+table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.hero {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.joinbutton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--yellow);
+    border: none;
+    color: var(--white);
+    padding: 10px 100%;
+    text-align: center;
+    text-decoration: wavy;
+    display: flex;
+    font-size: 24px;
+    border-radius: 1px;
+    box-shadow: 0 8px 16px 0 #473c3c, 0 6px 20px 0 #473c3c;
+    opacity: 70%;
+
+}
 
 body {
     display: flex;
@@ -38,7 +80,7 @@ nav {
 }
 
 .navigation {
-    display: none;
+    display: flex;
     flex-direction: initial;
     align-items: center;
     gap: 10px;
@@ -49,7 +91,8 @@ nav {
 }
 .navigation.open {
     display: flex;
-}
+    
+    }
 
 .navigation li {
     display: inline-block;
@@ -62,7 +105,7 @@ nav {
     text-align: center;
     text-decoration: none;
     color: var(--black);
-    font-size: 18px; /
+    font-size: 28px; /
 }
 
 navigation li a:hover {
@@ -78,6 +121,10 @@ navigation li a:hover {
 
 .open li a {
     display: block;
+}
+
+#menu{
+    display: none;
 }
 
 #menu::before {
@@ -125,45 +172,7 @@ footer {
     text-align: center;
 }
 
-table {
-    font-family: Arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-th,
-td {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
-
-th {
-    background-color: #f2f2f2;
-}
-
-.hero {
-    position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.joinbutton {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: var(--yellow);
-    border: none;
-    color: var(--white);
-    padding: 30px 2000px;
-    text-align: center;
-    text-decoration: wavy;
-    display: flex;
-    font-size: 24px;
-    border-radius: 1px;
-    box-shadow: 0 8px 16px 0 #473c3c, 0 6px 20px 0 #473c3c;
-    opacity: 70%;
-
+.flag{
+    width: auto;
+    height: 100%;
 }
