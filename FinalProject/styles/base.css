@@ -91,6 +91,7 @@ nav {
 }
 .navigation.open {
     display: flex;
+    flex-direction: initial;
     gap: 10px;
     margin-top: 20px;
     border-style: groove;
