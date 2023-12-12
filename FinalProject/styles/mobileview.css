@@ -14,7 +14,7 @@
         padding: 10px;
     }
     .navigation {
-        display: none;
+        display: inline-block;
         flex-direction: column;
         align-items: center;
         width: 100%;
@@ -46,4 +46,24 @@
         font-size: 24px;
     }
 
+    .open li a {
+        display: block;
+    }
+    
+    #menu::before {
+        content: "☰";
+    }
+    
+    #menu.open::before {
+        content: "❌";
+    }
+    
+    .container {
+        display: flex;
+    }
+
+    .column {
+        flex: 1;
+        padding: 30px;
+    }
 }
