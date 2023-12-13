@@ -35,24 +35,24 @@ th {
 }
 
 .hero {
-    position: relative;
+    position: sticky;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .joinbutton {
-    position: absolute;
+    display:inline-flex ;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--yellow);
     border: none;
     color: var(--white);
-    padding: 10px 100%;
+    padding: 10px 90%;
     text-align: center;
     text-decoration: wavy;
-    display: flex;
     font-size: 24px;
     border-radius: 1px;
     box-shadow: 0 8px 16px 0 #473c3c, 0 6px 20px 0 #473c3c;
@@ -117,8 +117,6 @@ navigation li a:hover {
     color: var(--black);
     font-weight: 700;
 }
-
-
 
 
 #menu{
