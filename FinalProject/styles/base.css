@@ -18,7 +18,7 @@ header {
     padding: 20px 0;
 }
 table {
-    font-family: Arial, sans-serif;
+    font-family: 'Mooli', sans-serif;
     border-collapse: collapse;
     width: 100%;
 }
@@ -42,20 +42,19 @@ th {
 }
 
 .joinbutton {
-    display:inline-flex ;
+    display: flex;
     position: relative;
-    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%);
     background-color: var(--yellow);
     border: none;
     color: var(--white);
-    padding: 10px 90%;
+    padding: 5px 40%;
     text-align: center;
     text-decoration: wavy;
-    font-size: 24px;
+    font-size: 22px;
     border-radius: 1px;
-    box-shadow: 0 8px 16px 0 #473c3c, 0 6px 20px 0 #473c3c;
+    box-shadow: 0 8px 10px 0 var(--blue), 0 6px 20px 0 var(--red);
     opacity: 70%;
 
 }
@@ -69,7 +68,6 @@ body {
 nav {
     background-color: var(--white);
     opacity: 80%;
-
     flex-direction: row;
 }
 

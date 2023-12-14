@@ -1,34 +1,94 @@
 {
-    "Types_of_Rentals": {
-        "Honda_Motor_Scooters": [
-            {
-                "model": "Honda Metropolitan (49cc)",
-                "capacity": "1 person"
-            },
-            {
-                "model": "Honda Dio (110cc)",
-                "capacity": "2 person"
-            },
-            {
-                "model": "Honda PCX150 (149cc)",
-                "capacity": "2 person"
-            }
-        ],
-        "Side_by_Side_ATVs": [
-            {
-                "model": "Honda Pioneer 1000",
-                "capacity": "4 person"
-            }
-        ],
-        "Jeeps": [
-            {
-                "model": "Jeep Wrangler - 4 door manuel with A/C",
-                "capacity": "5 person"
-            },
-            {
-                "model": "Jeep Wrangler - 2 door - open air - manuel",
-                "capacity": "4 person"
-            }
-        ]
+        "Types_of_Rentals": {
+            "Honda_Motor_Scooters": [
+                {
+                    "model": "Honda Metropolitan (49cc)",
+                    "capacity": "1 person",
+                    "prices": {
+                        "reservation": {
+                            "half_day": "$20",
+                            "full_day": "$30"
+                        },
+                        "walk_in": {
+                            "half_day": "$25",
+                            "full_day": "$35"
+                        }
+                    }
+                },
+                {
+                    "model": "Honda Dio (110cc)",
+                    "capacity": "2 person",
+                    "prices": {
+                        "reservation": {
+                            "half_day": "$30",
+                            "full_day": "$40"
+                        },
+                        "walk_in": {
+                            "half_day": "$35",
+                            "full_day": "$45"
+                        }
+                    }
+                },
+                {
+                    "model": "Honda PCX150 (149cc)",
+                    "capacity": "2 person",
+                    "prices": {
+                        "reservation": {
+                            "half_day": "$40",
+                            "full_day": "$50"
+                        },
+                        "walk_in": {
+                            "half_day": "$45",
+                            "full_day": "$55"
+                        }
+                    }
+                }
+            ],
+            "Side_by_Side_ATVs": [
+                {
+                    "model": "Honda Pioneer 1000",
+                    "capacity": "4 person",
+                    "prices": {
+                        "reservation": {
+                            "half_day": "$50",
+                            "full_day": "$70"
+                        },
+                        "walk_in": {
+                            "half_day": "$60",
+                            "full_day": "$80"
+                        }
+                    }
+                }
+            ],
+            "Jeeps": [
+                {
+                    "model": "Jeep Wrangler - 4 door with A/C",
+                    "capacity": "5 person",
+                    "prices": {
+                        "reservation": {
+                            "half_day": "$70",
+                            "full_day": "$100 Blackfriday"
+                        },
+                        "walk_in": {
+                            "half_day": "$85",
+                            "full_day": "$125 Blackfriday"
+                        }
+                    }
+                },
+                {
+                    "model": "Jeep Wrangler - 2 door",
+                    "capacity": "4 person",
+                    "prices": {
+                        "reservation": {
+                            "half_day": "$60",
+                            "full_day": "$85"
+                        },
+                        "walk_in": {
+                            "half_day": "$70",
+                            "full_day": "$90"
+                        }
+                    }
+                }
+            ]
+        }
     }
-}
