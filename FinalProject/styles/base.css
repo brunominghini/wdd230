@@ -3,7 +3,7 @@
     --black: #080808;
     --yellow: #cec54c;
     --red: #aa0505;
-    --white: #faf9fa;
+    --white: #ffffff;
 }
 
 h1,
@@ -194,8 +194,12 @@ footer {
     border-style: ridge;
     background-color: var(--white);
     text-align: center;
+    margin: 0px;
 }
+
 #footer{
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: space-evenly;
     align-items: center;  
