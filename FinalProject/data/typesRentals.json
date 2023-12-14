@@ -67,11 +67,12 @@
                     "prices": {
                         "reservation": {
                             "half_day": "$70",
-                            "full_day": "$100 Blackfriday"
+                            "full_day": "$100 Blackfriday Price"
+
                         },
                         "walk_in": {
                             "half_day": "$85",
-                            "full_day": "$125 Blackfriday"
+                            "full_day": "$125 Blackfriday Price"
                         }
                     }
                 },

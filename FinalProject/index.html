@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/mobileview.css">
     <link rel="icon" href="images/favicon.ico">
+   
 </head>
 
 <body>
@@ -26,17 +27,21 @@
         <div id="mode">
             🕶️
         </div>
-        <nav class="navbar">
+        <nav class="navbar">  
             <button id="menu"></button>
             <ul class="navigation">
+
                 <li><a href="index.html">Home Page</a></li>
                 <li><a href="rentals.html">Rentals</a></li>
                 <li><a href="reservations.html">Reservations</a></li>
-                <li><a href="contact.html" target="_blank">Contact</a></li>
+                <li><a href="contact.html" target="_blank">Contact</a></li>  
             </ul>
+            <div >
+                weather
+            </div>
         </nav>
     </header>
-    
+
     <main>
         <div class="hero" id="container">
             <picture>
@@ -74,22 +79,49 @@
         </div>
     </main>
     <footer>
+    <div>
+        <picture>
+            <img class="" src="images/flagcozumel.png" alt="flagcozumel" width="200">
+        </picture>
+    </div>
+    <div id="footer">
+            <div class="socialmedia">
+                <h3>(123)123456789<h3>
+            <a  target="_blank" href="https://www.facebook.com/brunominghini">
+          <img
+            class="icons"
+            src="images/facebook_logo.png"
+            alt="fb"/></a>
+        <a  target="_blank" href="https://www.twitter.com/minghini_bruno"><img
+            class="icons"
+            src="images/twitter_logo.png"
+            alt="twitter"/></a>
+        <a target="_blank" href="https://www.instagram.com/brunominghini"><img
+            class="icons"
+            src="images/instagram_logo.png"
+            alt="instagram" /></a>
+        </div>
         <div>
-            <picture>
-                <img class="flag" src="images/flagcozumel.png" alt="flagcozumel" width="200">
-            </picture>
             <h2>&copy; 🛵 ~Scoots~ Web site</h2>
-        </div>
-        <div>
-            <p><b>Bruno A. Minghini</b></p>
-            <p>WDD 230 Project</p>
-            <span id="currentYear"></span>
-            <p><span id="lastModified"></span></p>
-        </div>
-    </footer>
+            <b><span id="currentYear"></span> • Bruno A. Minghini • WDD 230 Project</b>
+        <p><span id="lastModified"></span></p>
+    </div>
+        <div class="social">
+            <p>
+              <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img
+                  style="border: 0; width: 88px; height: 31px"
+                  src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                  alt="CSS válido!"
+                />
+              </a>
+        </p>
+    </div>
+    <script src="scripts/darkmode.js"></script>
     <script src="scripts/behavior.js"></script>
-    <script src="scripts/information.js"></script>
     <script src="scripts/banner.js"></script>
+    <script src="scripts/information.js"></script>
+    </footer>
 </body>
 
 </html>

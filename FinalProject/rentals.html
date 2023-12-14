@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/mobileview.css">
     <link rel="icon" href="images/favicon.ico">
+    <script src="scripts/behavior.js"></script>
+    <script src="scripts/rentals.js"></script>
+    <script src="scripts/banner.js"></script>
 </head>
 
 <body>
@@ -40,7 +43,25 @@
         <div class="joinbutton"><a href="reservations.html">Take advantage of our <br>Black Friday</a></div>
         <h2>Max Rental Pricing</h2>
         <table id="rentalTable">
-
+            <thead id="thead">
+                <tr>
+                    <th rowspan="2">Rental Type</th>
+                    <th rowspan="2">Max. Persons</th>
+                    <th colspan="2">Reservation</th>
+                    <th colspan="2">Walk-In</th>
+                </tr>
+                <tr>
+                    <th>Half Day (3 hrs)</th>
+                    <th>Full Day</th>
+                    <th>Half Day (3 hrs)</th>
+                    <th>Full Day</th>
+                </tr>
+            </thead>
+            <tbody>
+            <!--Here will be create the tabkle with Json-->
+            </tbody>
+           
+        </table>
 </body>
 
 </html>
@@ -58,11 +79,12 @@
         <p>WDD 230 Project</p>
         <p><span id="lastModified"></span></p>
     </div>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/behavior.js"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/information.js"></script>
 </footer>
-<script src="scripts/information.js"></script>
-<script src="scripts/behavior.js"></script>
-<script src="scripts/rentals.js"></script>
-<script src="scripts/banner.js"></script>
+
 </body>
 
 </html>
