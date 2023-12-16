@@ -89,4 +89,10 @@
         flex: 1;
         padding: 30px;
     }
+    .responsive {
+    display: contents;
+     width: 60.99999%;
+     margin: 6px 0;
+   }
+  
 }

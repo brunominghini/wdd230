@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const apiKey = '0f8b3b88198771a951f0ceacc78f784b';
     const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
     const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
+    
 
     async function fetchWeather() {
         try {
@@ -19,6 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if (currentResponse.ok && forecastResponse.ok) {
                 const currentData = await currentResponse.json();
                 const forecastData = await forecastResponse.json();
+                const maxTempToday = getMaxTemperatureToday(forecastData.list);
+                document.getElementById('tempMax').textContent = maxTempToday + ' °C';
                 
                 displayCurrentWeather(currentData);
                 displayNextDayForecast(forecastData);
@@ -47,9 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function displayNextDayForecast(data) {
         const forecastList = data.list;
-        // Assuming the forecast list contains data in 3-hour intervals
-        
-        // Find the next day's forecast at 15:00 (3:00 PM)
+
         const nextDayForecastData = forecastList.find(item => {
             const dateTime = new Date(item.dt * 1000);
             return dateTime.getHours() === 15; // Check for 3:00 PM
@@ -67,6 +68,22 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    function getMaxTemperatureToday(forecastList) {
+        const today = new Date().getDate();
+    
+        const temperaturesToday = forecastList.reduce((maxTemp, item) => {
+            const dateTime = new Date(item.dt * 1000);
+            if (dateTime.getDate() === today) {
+                return Math.max(maxTemp, item.main.temp);
+            }
+            return maxTemp;
+        }, -Infinity);
+    
+        return temperaturesToday;
+    }
+
     fetchWeather();
+
+    
 });
 
