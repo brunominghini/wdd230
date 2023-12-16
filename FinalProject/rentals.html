@@ -18,9 +18,8 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/mobileview.css">
     <link rel="icon" href="images/favicon.ico">
-    <script src="scripts/behavior.js"></script>
     <script src="scripts/rentals.js"></script>
-    <script src="scripts/banner.js"></script>
+
 </head>
 
 <body>
@@ -39,8 +38,18 @@
             </ul>
         </nav>
     </header>
-    <main>   
-        <div class="joinbutton"><a href="reservations.html">Take advantage of our <br>Black Friday</a></div>
+    <main> 
+        <div class="hero" id="container">
+            <picture>
+                <source srcset="images/banner_small.webp" media="(max-width: 800px)">
+                <source srcset="images/banner_medium.webp" media="(max-width: 1200px)">
+                <source srcset="images/banner_large.webp" media="(max-width: 1800px)">
+                <img id="imgbanner" src="images/banner_medium.webp" alt="banner_pattern" style="width: 100%;" loading="lazy">
+
+            </picture>
+            <div class="joinbutton"><a href="reservations.html">Take advantage of our Black Friday</a></div>
+        </div>  
+        </div>
         <h2>Max Rental Pricing</h2>
         <table id="rentalTable">
             <thead id="thead">
@@ -58,7 +67,7 @@
                 </tr>
             </thead>
             <tbody>
-            <!--Here will be create the tabkle with Json-->
+            <!--Here will be create the table with Json-->
             </tbody>
            
         </table>
@@ -106,7 +115,11 @@
         </p>
     </div>
     </footer>
-
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/behavior.js"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/information.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 
 </html>
