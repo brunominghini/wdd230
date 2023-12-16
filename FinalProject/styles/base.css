@@ -4,6 +4,7 @@
     --yellow: #cec54c;
     --red: #aa0505;
     --white: #ffffff;
+    --gray: #d3d3d3;
 }
 
 h1,
@@ -17,6 +18,17 @@ header {
     text-align: center;
     padding: 20px 0;
 }
+
+.weather-info {
+    margin-bottom: 20px;
+    flex: 0 0 calc(50% - 20px); 
+}
+
+#weather-icon {
+    width: 50px;
+    height: 50px;
+}
+
 .banner {
     display: none;
     position: fixed; 
@@ -94,8 +106,10 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
+    background-color: var(--gray);   
 }
 nav {
+    text-align: center;
     background-color: var(--white);
     opacity: 80%;
     flex-direction: row;
@@ -165,6 +179,7 @@ navigation li a:hover {
     right: 1rem;
     font-size: 3rem;
     cursor: pointer;
+    margin-left: auto;
 }
 
 .title {

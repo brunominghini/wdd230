@@ -8,11 +8,11 @@ document.addEventListener("DOMContentLoaded", function() {
     modeButton.addEventListener("click", () => {
         if (modeButton.textContent.includes("🕶️")) {
             body.style.background = "#262238";
-            body.style.color = "#fff";
+            body.style.color = "#d3d3d3";
             footer.style.background = "#080808";
             modeButton.textContent = "🔆";
         } else {
-            body.style.background = "#fff";
+            body.style.background = "#d3d3d3";
             body.style.color = "#262238";
             modeButton.textContent = "🕶️";
             footer.style.background = "#fff";
