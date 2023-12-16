@@ -85,9 +85,7 @@ iframe {
 .image-gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 1x0px;
     margin-top: 20px;
-
 }
 
 .responsive {
@@ -235,12 +233,11 @@ nav {
 }
 
 .navigation li a {
-    display: flexbox;
     padding: 1rem;
     text-align: center;
     text-decoration: none;
     color: var(--black);
-    font-size: 28px;/
+    font-size: 28px;
 }
 
 navigation li a:hover {
