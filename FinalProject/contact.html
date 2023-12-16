@@ -47,7 +47,71 @@
         </div>
     </header>
     <main>
-        
+        <div class="information">
+            <section class="hero">
+                <h2>Welcome to Cozumel</h2>
+                <p>Escape the touristy western part of the island and explore the vast coasts and inlets on the southern
+                    and
+                    eastern shores with our rental services!</p>
+            </section>
+
+            <section id="about">
+                <h2>About Us</h2>
+                <p>A motor scooter rental company located on the island of Cozumel, catering to locals, tourists,
+                    enthusiasts, and cruise-based touring groups.</p>
+                <p>We offer friendly and easy-to-rent services for motor scooters, jeeps, and side-by-side ATVs.</p>
+            </section>
+
+            <section id="locations">
+                <h2>Our Locations</h2>
+                <p>We have two physical rental locations on Cozumel:</p>
+                <ul>
+                    <li>Near the Playa del Carmen-Cozumel Ferry dock in el Centro de Cozumel.</li>
+                    <li>Near the Terminal Puerta Maya further south along the coast, catering to cruise lines and
+                        patrons.</li>
+                </ul>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d35291.46921798834!2d-86.98836425788055!3d20.490400301204126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e9!4m5!1s0x8f4e59cebd031b81%3A0x1d4d43952273f214!2sFERRY%20TO%20PLAYA%20DEL%20CARMEN%2C%20Calle%202%20Nte%20100%2C%20Centro%2C%2077600%20Cozumel%2C%20Q.R.%2C%20M%C3%A9xico!3m2!1d20.511465299999998!2d-86.9500893!4m5!1s0x8f4e59cd70625421%3A0xb1974a1818657af2!2sCozumel%20Cruise%20Terminal%2C%20Costera%20Sur%2C%2077600%20Cozumel%2C%20QROO%2C%20M%C3%A9xico!3m2!1d20.4756876!2d-86.975321!5e1!3m2!1spt-BR!2sbr!4v1702751639618!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:1;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+
+            <section id="services">
+                <h2>Our Services</h2>
+                <p>We provide rentals for motor scooters, jeeps, and side-by-side ATVs, aiming to offer hassle-free and
+                    enjoyable experiences for our customers.</p>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>For inquiries and rental reservations, please contact us at:</p>
+                <p>Email: info@cozumelscooterrentals.com</p>
+                <p>Phone: +1 555-123-4567</p>
+            </section>
+        </div>
+        <div>
+            <h2>Rental Details Form</h2>
+            <form id="rentalForm" class="form-container" action="#" method="post">
+                <div class="form-contact">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-contact">
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                </div>
+                <div class="form-contact">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Por favor, insira um e-mail válido" required>
+                </div>
+                <div class="form-contact comment">
+                    <label for="accommodations">Comments:</label>
+                    <textarea id="accommodations" name="accommodations" rows="3"></textarea>
+                </div>
+                <div class="form-contact">
+                    <button type="submit">send</button>
+                </div>
+        </div>
     </main>
     <footer>
         <div>
@@ -56,44 +120,34 @@
             </picture>
         </div>
         <div id="footer">
-                <div class="socialmedia">
-                    <h3>(123)123456789<h3>
-                <a  target="_blank" href="https://www.facebook.com/brunominghini">
-              <img
-                class="icons"
-                src="images/facebook_logo.png"
-                alt="fb"/></a>
-            <a  target="_blank" href="https://www.twitter.com/minghini_bruno"><img
-                class="icons"
-                src="images/twitter_logo.png"
-                alt="twitter"/></a>
-            <a target="_blank" href="https://www.instagram.com/brunominghini"><img
-                class="icons"
-                src="images/instagram_logo.png"
-                alt="instagram" /></a>
+            <div class="socialmedia">
+                <h3>+1 555-123-4567 <h3>
+                        <a target="_blank" href="https://www.facebook.com/brunominghini">
+                            <img class="icons" src="images/facebook_logo.png" alt="fb" /></a>
+                        <a target="_blank" href="https://www.twitter.com/minghini_bruno"><img class="icons"
+                                src="images/twitter_logo.png" alt="twitter" /></a>
+                        <a target="_blank" href="https://www.instagram.com/brunominghini"><img class="icons"
+                                src="images/instagram_logo.png" alt="instagram" /></a>
             </div>
             <div>
                 <h2>&copy; 🛵 ~Scoots~ Web site</h2>
                 <b><span id="currentYear"></span> • Bruno A. Minghini • WDD 230 Project</b>
-            <p><span id="lastModified"></span></p>
-        </div>
+                <p><span id="lastModified"></span></p>
+            </div>
             <div class="social">
                 <p>
-                  <a href="http://jigsaw.w3.org/css-validator/check/referer">
-                    <img
-                      style="border: 0; width: 88px; height: 31px"
-                      src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-                      alt="CSS válido!"
-                    />
-                  </a>
-            </p>
-        </div>
-        </footer>
-        <script src="scripts/darkmode.js"></script>
-        <script src="scripts/behavior.js"></script>
-        <script src="scripts/banner.js"></script>
-        <script src="scripts/information.js"></script>
-        <script src="scripts/weather.js"></script>
+                    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                        <img style="border: 0; width: 88px; height: 31px"
+                            src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="CSS válido!" />
+                    </a>
+                </p>
+            </div>
+    </footer>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/behavior.js"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/information.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 
 </html>
