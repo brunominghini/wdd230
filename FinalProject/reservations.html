@@ -36,73 +36,127 @@
             </ul>
         </nav>
     </header>
-    <body>
-    <main>
-        <div class="hero" id="container">
-            <picture>
-                <source srcset="images/banner_small.webp" media="(max-width: 800px)">
-                <source srcset="images/banner_medium.webp" media="(max-width: 1200px)">
-                <source srcset="images/banner_large.webp" media="(max-width: 1800px)">
-                <img id="imgbanner" src="images/banner_medium.webp" alt="banner_pattern" style="width: 100%;" loading="lazy">
 
-            </picture>
-            <div class="joinbutton"><a href="reservations.html">Take advantage of our Black Friday</a></div>
-        </div>
-        <h2>
-            Rental Services and Agreements
-        </h2>
-        <ul>
-            <li>A $50 security deposit is required to confirm reservations.</li>
-            <li>A valid drivers license is required in hand at the time of rental.</li>
-            <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
-            <li>Fuel charge is not included.</li>
-            <li>Unlimited mileage.</li>
-            <li>Liability insurance is included.</li>
-            <li>Damage insurance is available for purchase.</li>
-            <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
-            <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
-            <li>Rentals may be returned to either physical location.</li>
-        </ul>
-    </main>
-    <footer>
-        <div>
-            <picture>
-                <img class="" src="images/flagcozumel.png" alt="flagcozumel" width="200">
-            </picture>
-        </div>
-        <div id="footer">
+    <body>
+        <main>
+            <div class="hero" id="container">
+                <picture>
+                    <source srcset="images/banner_small.webp" media="(max-width: 800px)">
+                    <source srcset="images/banner_medium.webp" media="(max-width: 1200px)">
+                    <source srcset="images/banner_large.webp" media="(max-width: 1800px)">
+                    <img id="imgbanner" src="images/banner_medium.webp" alt="banner_pattern" style="width: 100%;"
+                        loading="lazy">
+
+                </picture>
+                <div class="joinbutton"><a href="reservations.html">Take advantage of our Black Friday</a></div>
+            </div>
+            <h2>
+                Rental Services and Agreements
+            </h2>
+            <ul>
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at the time of rental.</li>
+                <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                <li>Fuel charge is not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is included.</li>
+                <li>Damage insurance is available for purchase.</li>
+                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                <li>Rentals may be returned to either physical location.</li>
+            </ul>
+
+            <h2>Rental Details Form</h2>
+            <form id="rentalForm" class="form-container" action="#" method="post">
+                <div class="form-rental">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-rental">
+                    <label for="rentalType">Rental Type:</label>
+                    <select id="rentalType" name="rentalType" required>
+                        <option value="">Select the type</option>
+                        <option value="~Honda Metro Scooter">~Honda Metro Scooter</option>
+                        <option value="~Honda Dio Scooter">~Honda Dio Scooter</option>
+                        <option value="~Honda PCX150 Scooter">~Honda PCX150 Scooter	</option>
+                        <option value="Honda Pioneer ATV">Honda Pioneer ATV</option>
+                        <option value="Jeep Wrangler - 4 door with a/c">Jeep Wrangler - 4 door with a/c</option>
+                        <option value="Jeep Wrangler - 2 door">Jeep Wrangler - 2 door</option>
+                    </select>
+                </div>
+                <div class="form-rental">
+                    <label for="period">Period:</label>
+                    <select id="period" name="period" required>
+                        <option value="">Select the period</option>
+                        <option value="Half Day (3 hrs)">Half Day (3 hrs)</option>
+                        <option value="Full Day">Full Day</option>
+                        <option value="Customize">Customize</option>
+                        </select>
+                </div>
+                
+                <div class="form-rental">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-rental">
+                    <label for="number">Number:</label>
+                    <input type="number" id="number" name="number" required>
+                </div>
+                <div class="form-rental">
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                </div>
+                
+                <div class="form-rental">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-rental">
+                    <label for="location">Home State or Country:</label>
+                    <input type="text" id="location" name="location" required>
+                </div>
+                <div class="form-rental">
+                    <label for="cruiseLine">Cruise Line (if applicable):</label>
+                    <input type="text" id="cruiseLine" name="cruiseLine">
+                </div>
+                <div class="form-rental full-width">
+                    <label for="accommodations">Special Accommodations/Comments (such as the need and location of a drop-off request):</label>
+                    <textarea id="accommodations" name="accommodations" rows="3"></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="submit">Reserve</button>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <div>
+                <picture>
+                    <img class="" src="images/flagcozumel.png" alt="flagcozumel" width="200">
+                </picture>
+            </div>
+            <div id="footer">
                 <div class="socialmedia">
                     <h3>(123)123456789<h3>
-                <a  target="_blank" href="https://www.facebook.com/brunominghini">
-              <img
-                class="icons"
-                src="images/facebook_logo.png"
-                alt="fb"/></a>
-            <a  target="_blank" href="https://www.twitter.com/minghini_bruno"><img
-                class="icons"
-                src="images/twitter_logo.png"
-                alt="twitter"/></a>
-            <a target="_blank" href="https://www.instagram.com/brunominghini"><img
-                class="icons"
-                src="images/instagram_logo.png"
-                alt="instagram" /></a>
-            </div>
-            <div>
-                <h2>&copy; 🛵 ~Scoots~ Web site</h2>
-                <b><span id="currentYear"></span> • Bruno A. Minghini • WDD 230 Project</b>
-            <p><span id="lastModified"></span></p>
-        </div>
-            <div class="social">
-                <p>
-                  <a href="http://jigsaw.w3.org/css-validator/check/referer">
-                    <img
-                      style="border: 0; width: 88px; height: 31px"
-                      src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-                      alt="CSS válido!"
-                    />
-                  </a>
-            </p>
-        </div>
+                            <a target="_blank" href="https://www.facebook.com/brunominghini">
+                                <img class="icons" src="images/facebook_logo.png" alt="fb" /></a>
+                            <a target="_blank" href="https://www.twitter.com/minghini_bruno"><img class="icons"
+                                    src="images/twitter_logo.png" alt="twitter" /></a>
+                            <a target="_blank" href="https://www.instagram.com/brunominghini"><img class="icons"
+                                    src="images/instagram_logo.png" alt="instagram" /></a>
+                </div>
+                <div>
+                    <h2>&copy; 🛵 ~Scoots~ Web site</h2>
+                    <b><span id="currentYear"></span> • Bruno A. Minghini • WDD 230 Project</b>
+                    <p><span id="lastModified"></span></p>
+                </div>
+                <div class="social">
+                    <p>
+                        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                            <img style="border: 0; width: 88px; height: 31px"
+                                src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="CSS válido!" />
+                        </a>
+                    </p>
+                </div>
         </footer>
         <script src="scripts/darkmode.js"></script>
         <script src="scripts/behavior.js"></script>
@@ -110,6 +164,6 @@
         <script src="scripts/rentals.js"></script>
         <script src="scripts/information.js"></script>
         <script src="scripts/weather.js"></script>
-</body>
+    </body>
 
 </html>

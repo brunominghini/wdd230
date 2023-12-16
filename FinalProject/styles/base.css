@@ -307,5 +307,56 @@ footer {
 .flag {
     width: auto;
     height: 100%;
-    background-color: #080808;
+    background-color:var(--black);
 }
+
+.form-container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .form-rental {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .form-rental label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .form-rental input,
+  .form-rental select,
+  .form-rental textarea {
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  .form-rental textarea {
+    resize: vertical;
+  }
+
+  .form-rental.full-width {
+    grid-column: 1 / span 2;
+  }
+
+  .form-actions {
+    text-align: center;
+  }
+
+  .form-actions button {
+    padding: 10px 40px;
+    font-size: 30px;
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+  }
+
+  .form-actions button:hover {
+    background-color: #0056b3;
+  }
